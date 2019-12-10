@@ -1,0 +1,86 @@
+{
+  "id": "1276559",
+  "name": "mydem",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1304892",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1652786",
+      "name": "叉",
+      "font_class": "cha",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "1903782",
+      "name": "web__比特币右箭头",
+      "font_class": "web__bitebiyoujiantou",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "2741962",
+      "name": "日历",
+      "font_class": "rili1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5330865",
+      "name": "纸飞机",
+      "font_class": "zhifeiji",
+      "unicode": "e7d5",
+      "unicode_decimal": 59349
+    },
+    {
+      "icon_id": "5354181",
+      "name": "点",
+      "font_class": "dian1",
+      "unicode": "e7a5",
+      "unicode_decimal": 59301
+    },
+    {
+      "icon_id": "7334992",
+      "name": "github",
+      "font_class": "git",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "7666973",
+      "name": "intercom",
+      "font_class": "intercom",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "8021844",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "8267138",
+      "name": "谷歌",
+      "font_class": "guge",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "8327184",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

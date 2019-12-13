@@ -1,0 +1,18 @@
+.Title{
+    text-align: center;
+    padding: 0 10px;
+    .title_warp{
+        font-size: 25px;
+        color: #000;
+    }
+    .title_son{
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Title {
+        line-height: 2 !important;
+    }
+}

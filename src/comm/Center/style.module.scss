@@ -1,0 +1,30 @@
+.Center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.FlexRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.FlexCol {
+    width: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .FlexCol {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1455px) {
+    .FlexCol {
+        margin: 0 !important;
+    }
+    .FlexRow {
+        flex-wrap: nowrap;
+    }
+}

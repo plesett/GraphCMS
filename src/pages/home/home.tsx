@@ -1,22 +1,26 @@
-import Home from './index';
-import * as actions from '../../store/actions/';
-import { connect } from 'react-redux';
-import { StoreState } from '../../store/type';
+import React from 'react';
+import { IHomeProps } from './type';
+import Header from '../../components/Header/Header';
+import { HeaderWarp } from '../../components/HeaderWarp';
 
-export function mapStateToProps({ enthusiasmLevel, languageName, info }: StoreState) {
-    return {
-        count: enthusiasmLevel,
-        name: languageName,
-        info: info,
-    }
+class Home extends React.Component<IHomeProps> {
+
+	componentDidMount() {
+		// 触发dispatch请求数据
+		this.props.HeaderInfo()
+		console.log(this.props);
+	}
+	hanhleXX = () => {
+		console.log(1);
+	}
+	render() {
+		return (
+			<React.Fragment>
+				<HeaderWarp />
+				<Header />
+			</React.Fragment>
+		);
+	}
 }
 
-export function mapDispatchToProps(dispatch: any) {
-    return {
-        onIncrement: () => dispatch(actions.incrementEnthusiasm()),
-        onDecrement: () => dispatch(actions.decrementEnthusiasm()),
-        getDataTest: () => dispatch(actions.getDataList())
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default Home;

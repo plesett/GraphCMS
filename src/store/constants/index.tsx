@@ -7,3 +7,10 @@ export type DECREMENT_ENTHUSIASM = typeof DECREMENT_ENTHUSIASM;
 // test
 export const GETDATALIST = 'GETDATALIST';
 export type GETDATALIST = typeof GETDATALIST;
+
+// header
+export const SENDHEADERINFO = 'SENDHEADERINFO';
+export type SENDHEADERINFO = typeof SENDHEADERINFO;
+
+export const GETTEST = 'GETTEST'
+export type GETTEST = typeof GETTEST;

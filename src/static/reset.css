@@ -133,5 +133,8 @@ table {
     border-spacing: 0;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* 公用样式 */

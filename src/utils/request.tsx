@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const HOST: string = 'https://api';
+const HOST: string = 'http://api';
 
 class Http {
     // get请求

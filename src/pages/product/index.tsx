@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import * as actions from '../../store/actions/';
+import * as actions from '../../store/actions';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
+import { StoreState } from '../../store/type/index';
 
 interface Props {
     name:string
@@ -18,11 +19,11 @@ export class Product extends Component<Props> {
     }
 }
 
-const mapStateToProps = (state:any) => ({
+const mapStateToProps = (state:StoreState) => ({
     
 })
 
-const mapDispatchToProps = (dispatch: Dispatch<actions.EnthusiasmAction>) => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
     
 }
 

@@ -1,56 +1,23 @@
 import * as constants from '../constants/';
-import { 
-    GetAllData, 
-    GetHome, 
-    GetTitle,
-    GetInfo
-} from '../../utils/api';
+import { Dispatch, AnyAction } from "redux";
+import { GetHeaderInfo } from '../../utils/api';
+import { createAction } from 'redux-actions';
 
-export interface IncrementEnthusiasm {
-    type: constants.INCREMENT_ENTHUSIASM;
-}
 
-export interface DecrementEnthusiasm {
-    type: constants.DECREMENT_ENTHUSIASM;
-}
+export const GetTest = createAction(constants.GETTEST, (data: AnyAction): AnyAction => {
+    return data
+})
 
-// test
-export interface getDataList {
-    type: constants.GETDATALIST,
-    data: any
-}
 
-export type EnthusiasmAction = IncrementEnthusiasm | DecrementEnthusiasm | getDataList;
-
-export function incrementEnthusiasm(): IncrementEnthusiasm {
-    return {
-        type: constants.INCREMENT_ENTHUSIASM
-    }
-}
-
-export function decrementEnthusiasm(): DecrementEnthusiasm {
-    return {
-        type: constants.DECREMENT_ENTHUSIASM
-    }
-}
-// test
-export function SendDetaHome(data: any): getDataList {
-    return {
-        type: constants.GETDATALIST,
-        data
-    }
-}
-
-// test
-export const getDataList = () => {
-    return (dispatch: any) => {
-        GetAllData([GetHome(), GetTitle(), GetInfo()])
-            .then((res: any) => {
-                console.log(res);
-                dispatch(SendDetaHome(res[0]))
-            })
-            .catch((err) => {
-                console.log(err)
+export const HeaderInfo = (): object => {
+    return (dispatch: Dispatch<any>) => {
+        GetHeaderInfo()
+            .then((res:any) => {
+                // 发送数据到redux
+                dispatch(GetTest(res.data))
+                console.log('请求一次');
             })
     }
 }
+
+

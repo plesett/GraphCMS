@@ -1,0 +1,86 @@
+    .header_logo_inner {
+        display: block;
+        padding: 19px 0;
+        margin-left: 5px;
+        img {
+            height: 60px;
+        }
+    }
+    
+    .Header_Menu {
+        float: right;
+        padding: 0 10px;
+        line-height: 5.9;
+        overflow: hidden;
+        .Header_item {
+            float: left;
+            margin: 0 17px;
+            a {
+                display: inline-block;
+                color: rgb(211, 211, 220);
+                font-size: 13.8px;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all .5s;
+                &:hover {
+                    transition: all .5s;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    
+    .Header_User {
+        line-height: 5;
+        overflow: hidden;
+        .Header_User_item {
+            float: left;
+            margin: 0 5px;
+            text-transform: uppercase;
+            transition: all .5s;
+            a {
+                display: inline-block;
+                color: rgb(211, 211, 220);
+                font-size: 13.8px;
+                font-weight: bold;
+                padding: 7px 14px;
+                // transition: all .2s;
+                &:hover {
+                    transition: all .5s;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    
+    #Header_Sign {
+        width: 77px;
+        height: 20px;
+        font-size: 13px;
+        font-family: Open Sans, PT Sans, sans-serif;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 5px;
+        background-color: rgb(12, 207, 242);
+    }
+    
+    @media screen and (max-width: 1455px) {
+        .Header_item {
+            margin: 0 10px !important;
+        }
+        .Header_User {
+            float: right;
+        }
+        .Header_User_item {
+            a {
+                padding: 7px 4px !important;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1243px) {
+        .Header_User,
+        .Header_Menu {
+            display: none;
+        }
+    }

@@ -1,25 +1,20 @@
-import { EnthusiasmAction } from '../actions/';
 import { StoreState } from '../type/';
-import * as constants from '../constants/index';
+import * as actionTypes from '../constants/index';
+import { handleActions } from 'redux-actions';
 
-const HomeReduce = {
-    enthusiasmLevel: 1,
-    languageName: 'TypeScript',
-    info: []
+const Reduce = {
+    Header: []
 }
 
-const Reducer = (state: StoreState = HomeReduce, action: EnthusiasmAction) => {
-    switch (action.type) {
-        case constants.INCREMENT_ENTHUSIASM:
-            return { ...state, enthusiasmLevel: state.enthusiasmLevel + 1 };
-        case constants.DECREMENT_ENTHUSIASM:
-            return { ...state, enthusiasmLevel: Math.max(1, state.enthusiasmLevel - 1) };
-        case constants.GETDATALIST:
-            return { ...state, info: action.data}
-    }
-    return state;
-}
 
+const Reducer = handleActions({
+    [actionTypes.GETTEST]: (state: StoreState, action) => {
+        return {
+            ...state,
+            Header: action.payload,
+        };
+    },
+}, Reduce);
 
 
 export default Reducer;
